@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+.frame {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 40px solid white;
+  z-index: 1;
+  box-shadow: inset 0px 0px 4px #c5c4c4;
+}
+.header {
+  &__container {
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+  }
+  &__name {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+.footer {
+  position: fixed;
+  padding: 10px 0;
+  bottom: 0;
+}

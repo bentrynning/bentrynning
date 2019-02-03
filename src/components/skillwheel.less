@@ -1,0 +1,32 @@
+.skillwheel {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skillwheel__level {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.skillwheel__bar {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%,
+}
+.skillwheel__percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #5D5D5D
+}
+.skillwheel__name {
+}

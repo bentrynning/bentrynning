@@ -13,7 +13,7 @@ interface Seo {
 type Meta = {
   property?: string
   name?: string
-  content?: string
+  content?: any
 }
 
 const SEO: React.FunctionComponent<Seo> = ({
@@ -79,7 +79,9 @@ const SEO: React.FunctionComponent<Seo> = ({
                   : []
               )
               .concat(meta)}
-          />
+          >
+           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet"/>
+          </Helmet>
         )
       }}
     />
