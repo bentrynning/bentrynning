@@ -19,14 +19,12 @@ const Layout = ({ children }) => (
       <>
         <div className="frame">
           <Header siteTitle={data.site.siteMetadata.title} />
-          <footer className="footer">
-            © {new Date().getFullYear()}, Bent Rynning
-            {` `}
+          <footer className="footer text-s">
+            © Copright {new Date().getFullYear()} Bent Rynning - All Rights
+            Reserved
           </footer>
         </div>
-        <main className="container">
-          {children}
-        </main>
+        <main className="container">{children}</main>
       </>
     )}
   />

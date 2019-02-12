@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
@@ -11,6 +11,11 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
+          rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"/>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -21,7 +26,7 @@ export default function HTML(props) {
         <div
           key={`body`}
           id="___gatsby"
-          style={{height: '100%'}}
+          style={{ height: '100%' }}
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}

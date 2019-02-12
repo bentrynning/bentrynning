@@ -1,27 +1,39 @@
-import React from 'react'
-import Skillwheel from '../skillwheel'
+import React, { useState, useEffect } from 'react'
+import Skill from '../Skill'
 
-import './skills.less';
+import './skills.less'
 
-const Skills = () => (
-  <section className="skills section">
-    <h1 className="text-l">My skills</h1>
+const Skills = () => {
+  return (
+    <section id="skill_section" className="skills section">
+      <div className="skills__container">
+        <h1 className="title text-l m-3">My skills</h1>
+        <p className="text-s m-3">
+          1 year UX and 4 year web developer experience. Worked with different
+          technologies both in front and backend. My focus and passion is frontend development and user experieance
+        </p>
+      
+        <p className="text-m m-1">Frontend</p>
+        <div className="skills__content">
+          <Skill name="Javascript" level="90" color="red" />
+          <Skill name="Typescript" level="85" color="red"  />
+          <Skill name="React" level="90" color="purple"  />
+          <Skill name="Angular" level="70" color="purple"  />
+          <Skill name="Vue" level="60" color="purple"  />
+          <Skill name="HTML" level="98" color="green" />
+          <Skill name="CSS" level="90" color="green" />
+          <Skill name="Less" level="88" color="green" />
+        </div>
 
-    <h2 className="text-m m-1">Frontend</h2>
-    <div className="skills__content">
-      <Skillwheel name="Javascript" level="90" color="red" />
-      <Skillwheel name="Typescript" level="85" color="red" />
-      <Skillwheel name="HTML" level="100" color="green" />
-      <Skillwheel name="CSS" level="98" color="green" />
-    </div>
-
-    <h2 className="text-m m-1">Backend</h2>
-    <div className="skills__content">
-      <Skillwheel name="Java" level="60" color="blue" />
-      <Skillwheel name="C#" level="40" color="blue" />
-      <Skillwheel name="Node" level="80" color="orange" />
-    </div>
-  </section>
-)
+        <p className="text-m m-1">Backend</p>
+        <div className="skills__content">
+          <Skill name="Java" level="50" color="blue" />
+          <Skill name="C#" level="40" color="blue" />
+          <Skill name="Node js" level="60" color="orange" />
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default Skills
