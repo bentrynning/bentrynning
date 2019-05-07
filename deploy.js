@@ -1,4 +1,4 @@
-const deploy = require('deploy-me')
+const deploy = require('@bentrynning/deploy-me')
 
 const config = {
   host: '198.211.127.55',
@@ -6,7 +6,7 @@ const config = {
 } 
 
 const paths = {
-  local: './public',
+  local: 'public/',
   remote: '/var/www/me'
 }
 

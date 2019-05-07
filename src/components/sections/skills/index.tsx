@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import Skill from '../Skill'
+import React from 'react'
+import Skill from '../../Skill'
 
 import './skills.less'
 
@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section id="skill_section" className="skills section">
       <div className="skills__container">
-        <h1 className="title text-l m-3">My skills</h1>
+        <h1 className="title text-l m-3">Skills</h1>
         <p className="text-s m-3">
           1 year UX and 4 year web developer experience. Worked with different
           technologies both in front and backend. My focus and passion is frontend development and user experieance

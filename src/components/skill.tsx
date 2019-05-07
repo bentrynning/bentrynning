@@ -53,11 +53,11 @@ const isInViewport = (elem) => {
 const Skill: React.FunctionComponent<Skill> = ({ name, level, color }) => {
   const [offset, setOffset] = useState(circumference)
 
+  const [animate, setAnimate] = useState(false)
+
   useEffect(() => {
     animate && setOffset(calculateOffset(level))
-  })
-
-  const [animate, setAnimate] = useState(false)
+  }, [animate])
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
